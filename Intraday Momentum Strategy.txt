@@ -1,0 +1,59 @@
+Key Advantages of This Version:
+
+Simplified Yet Powerful Logic
+
+Uses VWAP + Volume Spikes for high-probability entries
+
+Automatically adapts to market volatility
+
+Works best during first 2 hours of trading
+
+Enhanced Money Management
+
+Auto-calculates position size based on account risk
+
+Dynamic trailing stop loss
+
+Real-time P&L tracking
+
+Angel One Specific Features
+
+Direct integration with your existing feed
+
+Automatic expiry handling
+
+Paper trading toggle
+
+Performance Boosters
+
+Thread-based architecture
+
+Minimal API calls
+
+Efficient price monitoring
+
+To Use:
+
+Place this file in the same folder as angel_subscribe_n1.py
+
+First run: python angel_subscribe_n1.py (for real-time data)
+
+Then run: python intraday_momentum_strategy.py
+
+Strategy Edge Cases Handled:
+
+Auto-skip trades during low liquidity (first/last 15 minutes)
+
+Position size caps to prevent over-leverage
+
+Price spikes filtering through volume confirmation
+
+Network error recovery mechanisms
+
+Recommended Market Conditions:
+
+Best for trending days (avoid sideways markets)
+
+Ideal for NIFTY/BANKNIFTY index options
+
+Optimal between 9:30 AM - 2:30 PM IST

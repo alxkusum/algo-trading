@@ -1,0 +1,71 @@
+Key Enhancements in This Version:
+Advanced Indicators
+
+Uses EMA crossover (9 & 21) + RSI (14) for high-probability signals
+
+Combines trend-following and momentum strategies
+
+Real-Time Performance Tracking
+
+Tracks cumulative P&L
+
+Records trade history with entry/exit times
+
+Auto-generates end-of-day CSV reports
+
+Improved Risk Management
+
+Dynamic position sizing based on account balance
+
+Trailing stop loss with 0.5% buffer
+
+Max trade limit to prevent over-trading
+
+Error Handling & Reliability
+
+Auto-recovery from API errors
+
+Market hours check to avoid after-hours trading
+
+Thread-safe trade execution
+
+User-Friendly Features
+
+Clear console logs for trade execution
+
+Detailed trade history with P&L breakdown
+
+Paper trading toggle for testing
+
+How It Works:
+Entry Conditions:
+
+Long: EMA(9) > EMA(21) + RSI > 50 + Price > EMA(9)
+
+Short: EMA(9) < EMA(21) + RSI < 50 + Price < EMA(9)
+
+Exit Conditions:
+
+Take Profit: 1.5x risk-reward ratio
+
+Stop Loss: 2% trailing stop
+
+Trade Management:
+
+Automatically adjusts position size based on account risk
+
+Limits max concurrent trades to 3
+
+Monitors trades in real-time
+
+To Use:
+Place this file in the same folder as angel_subscribe_n1.py
+
+First run: python angel_subscribe_n1.py (for real-time data)
+
+Then run: python advanced_intraday_strategy.py
+
+Sample Trade Report:
+Symbol	Direction	Entry Price	Exit Price	P&L	Entry Time	Exit Time	Exit Reason
+NFO:NIFTY ...CE	BUY	18000	18200	200	09:35:12	10:15:45	TP
+NFO:NIFTY ...PE	SELL	18150	18050	100	11:20:30	12:05:10	SL

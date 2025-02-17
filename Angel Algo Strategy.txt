@@ -1,0 +1,83 @@
+Key Features:
+
+Integrated Strategy System
+Combines Bollinger Bands + RSI for entry signals with:
+
+Dynamic position sizing
+
+Automatic strike selection
+
+Real-time price monitoring
+
+Stop loss/take profit management
+
+Risk Management
+
+2% risk per trade
+
+Automatic position sizing
+
+Max concurrent trades limit
+
+2% trailing stop loss
+
+2% take profit
+
+Angel One Specific
+
+Uses official Angel One API
+
+Integrates with existing WebSocket feed
+
+Supports both paper/live trading
+
+Automatic Trade Execution
+
+Automatically selects nearest expiry
+
+Chooses optimal strike prices
+
+Handles order matching and execution
+
+To Use:
+
+Place this file in the same folder as angel_subscribe_n1.py
+
+Run angel_subscribe_n1.py first to start WebSocket feed
+
+Run this strategy:
+
+python angel_algo_strategy.py
+
+Strategy Logic Flow:
+
+graph TD
+    A[Start WebSocket Feed] --> B[Check Market Condition]
+    B --> C{Strategy Conditions Met?}
+    C -->|Yes| D[Calculate Strike & Position]
+    C -->|No| B
+    D --> E[Execute Trade]
+    E --> F[Monitor Positions]
+    F --> G{Exit Condition?}
+    G -->|Yes| H[Close Trade]
+    G -->|No| F
+
+Modification Guide:
+
+Change STRATEGY_CONFIG parameters for:
+
+Different risk levels
+
+Alternate symbols
+
+Order types
+
+Trade limits
+
+Implement different strategies by:
+
+Adding new strategy methods
+
+Modifying indicator calculations
+
+Changing entry/exit conditions
