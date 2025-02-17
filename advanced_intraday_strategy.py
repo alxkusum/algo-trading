@@ -10,7 +10,7 @@ from angel_subscribe_n1 import ltpDict  # Realtime prices
 CONFIG = {
     'symbol': 'NIFTY',            # Trading instrument
     'expiry': getNiftyExpiryDate(),# Auto-fetch expiry
-    'lot_size': 50,               # Contract quantity
+    'lot_size': 75,               # Contract quantity
     'risk_percent': 1.5,          # Risk per trade (% of capital)
     'rr_ratio': 1.5,              # Risk:Reward ratio
     'max_trades': 3,              # Maximum simultaneous trades
