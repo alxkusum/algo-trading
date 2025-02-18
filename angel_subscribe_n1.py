@@ -6,8 +6,8 @@ import time
 #     from SmartApi import SmartConnect    #Use SmartApi instead of smartapi if you get error
 #     from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 # except:
-from smartapi import SmartConnect    #Use SmartApi instead of smartapi if you get error
-from smartapi.smartWebSocketV2 import SmartWebSocketV2
+from SmartApi import SmartConnect    #Use SmartApi instead of smartapi if you get error
+from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 # from SmartWebsocketv2 import SmartWebSocketV2
 import pyotp
 import pandas as pd
