@@ -16,7 +16,7 @@
 #     from SmartApi import SmartConnect    #Use SmartApi instead of smartapi if you get error
 #     from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 # except:
-from smartapi import SmartConnect    #Use SmartApi instead of smartapi if you get error
+from SmartApi import SmartConnect    #Use SmartApi instead of smartapi if you get error
 from SmartWebsocketv2 import SmartWebSocketV2
 import datetime
 import time
